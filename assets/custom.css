@@ -1,3 +1,14 @@
+/*liens*/
+a {
+  color: #eb6245;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #eb6245;
+  text-decoration: underline;
+}
+
 /* bandeau */
 
 header.masthead .overlay {
@@ -7,7 +18,7 @@ header.masthead .overlay {
   height: 100%;
   width: 100%;
   background-color: #eb6245;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /*header*/
@@ -15,15 +26,15 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: #fff;
+  color: #f9cbbd;
 }
 
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
-    color: #f9cbbd;
+    color: #fff;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color:  #fff;
+    color:  #f9cbbd;
   }
   
   /*liste de posts*/
@@ -66,4 +77,16 @@ color: #f9cbbd;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(38.25, 151.3, 175.1, 0.5);
+}
+
+
+/*bouton lien*/
+.btn-link {
+  font-weight: 400;
+  color: #0085A1;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: rgb(0, 69.8043478261, 84.5);
+  text-decoration: underline;
 }
