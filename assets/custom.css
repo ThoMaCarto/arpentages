@@ -1,6 +1,6 @@
 /*liens*/
 a {
-  color: #eb6245;
+  color:  #343a40;
   text-decoration: none;
   background-color: transparent;
 }
@@ -26,7 +26,7 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: #f9cbbd;
+  color: #fff;
 }
 
   #mainNav .navbar-nav > li.nav-item > a {
@@ -83,7 +83,7 @@ color: #f9cbbd;
 /*bouton lien*/
 .btn-link {
   font-weight: 400;
-  color: #0085A1;
+  color: #ab6b60;
   text-decoration: none;
 }
 .btn-link:hover {
