@@ -1,7 +1,7 @@
 body{color:#2e624b;]
 /*liens*/
 a {
-  color:  #343a40;
+  color:#2e624b;
   text-decoration: none;
   background-color: transparent;
 }
@@ -84,7 +84,7 @@ color: #f9cbbd;
 /*bouton lien*/
 .btn-link {
   font-weight: 400;
-  color: #ab6b60;
+  color:#2e624b;
   text-decoration: none;
 }
 .btn-link:hover {
