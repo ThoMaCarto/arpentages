@@ -1,3 +1,4 @@
+body{color:#2e624b;]
 /*liens*/
 a {
   color:  #343a40;
@@ -89,4 +90,17 @@ color: #f9cbbd;
 .btn-link:hover {
   color: rgb(0, 69.8043478261, 84.5);
   text-decoration: underline;
+}
+
+/*selection*/
+::selection {
+  color: #fff;
+  background: #ab6b60;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #ab6b60;
+  text-shadow: none;
 }
