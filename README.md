@@ -1,6 +1,5 @@
 # arpentages
 site web test d'Arpentages
-visible [Arpentage github page](https://thomacarto.github.io/arpentages/)
 
 ## test
 dans le dossier 
