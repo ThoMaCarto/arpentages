@@ -26,6 +26,17 @@ body.soft-mode {
 }
 
 
+/*séparateur*/
+hr {
+  border: none;
+  height: 4px; /* épaisseur */
+  width: 60px; /* largeur du trait */
+  background-color: var(--primary); /* couleur via variable */
+  margin-left: 0; /* aligné à gauche */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* === Texte du body === */
 body {
   color: var(--text-body);
