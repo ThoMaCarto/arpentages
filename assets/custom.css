@@ -8,7 +8,7 @@
 }
 
 /* Thème dark à fort contraste */
-body.dark-mode {
+:root.dark-mode {
  --primary: #ff5722;
   --secondary: #ffccbc;
   --accent: #ffff00;
@@ -16,6 +16,14 @@ body.dark-mode {
   --color-bg: #000;
 }
 
+/*Thème annexe bleu jaune*/
+:root.soft-mode {
+  --primary: #3480c2;
+  --secondary: #d0ddd4;
+  --accent: #dadf64;
+  --text-body: #2e624b;
+  --color-bg: #ffffff;
+}
 
 
 /* === Texte du body === */
