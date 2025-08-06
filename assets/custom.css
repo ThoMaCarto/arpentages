@@ -4,6 +4,7 @@
   --secondary: #f9cbbd;
   --accent: #dadf64;
   --text-body: #2e624b;
+  --color-bg: #ffffff;
 }
 
 /* Thème dark à fort contraste */
@@ -12,12 +13,15 @@ body.dark-mode {
   --secondary: #ffccbc;
   --accent: #ffff00;
   --text-body: #ffffff;
+  --color-bg: #000;
 }
+
 
 
 /* === Texte du body === */
 body {
   color: var(--text-body);
+  background-color: var(--color-bg);
 }
 
 /* === Liens === */
