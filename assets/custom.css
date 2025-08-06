@@ -37,6 +37,13 @@ hr {
   margin-bottom: 2rem;
 }
 
+/*footer*/
+
+footer{
+  background-color: var(--secondary);
+}
+
+
 /* === Texte du body === */
 body {
   color: var(--text-body);
