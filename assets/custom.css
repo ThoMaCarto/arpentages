@@ -8,7 +8,7 @@
 }
 
 /* Thème dark à fort contraste */
-:root.dark-mode {
+body.dark-mode {
  --primary: #ff5722;
   --secondary: #ffccbc;
   --accent: #ffff00;
@@ -17,7 +17,7 @@
 }
 
 /*Thème annexe bleu jaune*/
-:root.soft-mode {
+body.soft-mode {
   --primary: #3480c2;
   --secondary: #d0ddd4;
   --accent: #dadf64;
@@ -60,7 +60,7 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: #fff;
+  color: var(  --accent);
 }
 
 /* === Navigation (navbar) === */
@@ -154,3 +154,8 @@ header.masthead .site-heading {
   text-shadow: none;
 }
 
+
+/*fa*/
+.fa-inverse {
+  color: var(--text-body);
+}
