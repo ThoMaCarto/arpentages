@@ -6,6 +6,15 @@
   --text-body: #2e624b;
 }
 
+/* Thème dark à fort contraste */
+body.dark-mode {
+ --primary: #ff5722;
+  --secondary: #ffccbc;
+  --accent: #ffff00;
+  --text-body: #ffffff;
+}
+
+
 /* === Texte du body === */
 body {
   color: var(--text-body);
