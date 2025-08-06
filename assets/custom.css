@@ -10,8 +10,8 @@
 /* Thème dark à fort contraste */
 body.dark-mode {
  --primary: #000;
-  --secondary: #fff;
-  --accent: #ff5722;
+  --secondary: #ff5722;
+  --accent: #0085a1;
   --text-body: #fff;
   --color-bg: #000;
 }
@@ -78,13 +78,13 @@ header.masthead .site-heading {
 .post-preview > a:focus,
 .post-preview > a:hover {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .post-preview > .post-meta > a:focus,
 .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: var(--primary);
+  color: var(--accent);
 }
 
 /* === Bouton principal === */
