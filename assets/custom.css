@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -95,16 +95,14 @@ header.masthead .site-heading {
 }
 
 .btn-primary:hover {
-  color: var(--secondary);
-  background-color: #ab6b60; /* plus foncé pour effet hover */
-  border-color: #ab6b60;
+  color: var(--accent);
+ 
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-  color: var(--secondary);
-  background-color: #ab6b60;
-  border-color: #ab6b60;
+  color: var(--accent);
+
   box-shadow: 0 0 0 0.2rem rgba(235, 98, 69, 0.5);
 }
 
@@ -119,8 +117,8 @@ header.masthead .site-heading {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: var(--secondary);
-  background-color: #ab6b60;
-  border-color: #ab6b60;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
