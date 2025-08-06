@@ -9,10 +9,10 @@
 
 /* Thème dark à fort contraste */
 body.dark-mode {
- --primary: #ff5722;
-  --secondary: #ffccbc;
-  --accent: #ffff00;
-  --text-body: #ffffff;
+ --primary: #000;
+  --secondary: #fff;
+  --accent: #ff5722;
+  --text-body: #fff;
   --color-bg: #000;
 }
 
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--accent);
   text-decoration: underline;
 }
 
@@ -137,25 +137,36 @@ header.masthead .site-heading {
 }
 
 .btn-link:hover {
-  color: #00443a; /* plus foncé pour hover */
+  color: var(  --accent);
   text-decoration: underline;
 }
 
 /* === Sélection de texte === */
 ::selection {
-  color: #fff;
-  background: #ab6b60;
+  color: #000;
+  background: var(  --accent);
   text-shadow: none;
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #ab6b60;
+  color: #000;
+  background: var(  --accent);
   text-shadow: none;
 }
 
 
 /*fa*/
 .fa-inverse {
-  color: var(--text-body);
+  color: var(--secondary);
 }
+
+/*lien vers articles*/
+.post-preview {
+    >a {
+        color:  var(--text-body);
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            color: $primary;
+        }
