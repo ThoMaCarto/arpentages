@@ -1,28 +1,40 @@
-body{color:#2e624b;]
-/*liens*/
+/* === Variables personnalisées === */
+:root {
+  --primary: #eb6245;
+  --secondary: #f9cbbd;
+  --accent: #dadf64;
+  --text-body: #2e624b;
+}
+
+/* === Texte du body === */
+body {
+  color: var(--text-body);
+}
+
+/* === Liens === */
 a {
-  color:#2e624b;
+  color: var(--text-body);
   text-decoration: none;
   background-color: transparent;
 }
+
 a:hover {
-  color: #eb6245;
+  color: var(--primary);
   text-decoration: underline;
 }
 
-/* bandeau */
-
+/* === Bandeau de header === */
 header.masthead .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #eb6245;
+  background-color: var(--primary);
   opacity: 1;
 }
 
-/*header*/
+/* === Titre dans le header === */
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
@@ -30,69 +42,85 @@ header.masthead .site-heading {
   color: #fff;
 }
 
-  #mainNav .navbar-nav > li.nav-item > a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color:  #f9cbbd;
-  }
-  
-  /*liste de posts*/
-  .post-preview > a:focus, .post-preview > a:hover {
+/* === Navigation (navbar) === */
+#mainNav .navbar-nav > li.nav-item > a {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:focus,
+#mainNav .navbar-nav > li.nav-item > a:hover {
+  color: var(--secondary);
+}
+
+/* === Liste de posts === */
+.post-preview > a:focus,
+.post-preview > a:hover {
   text-decoration: none;
-  color: #eb6245;
+  color: var(--primary);
 }
 
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+.post-preview > .post-meta > a:focus,
+.post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #eb6245;
+  color: var(--primary);
 }
 
-/* bouton principal*/
+/* === Bouton principal === */
 .btn-primary {
-  color: #f9cbbd;
-  background-color: #eb6245 ;
-  border-color: #eb6245;
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
+
 .btn-primary:hover {
-  color: #f9cbbd;
+  color: var(--secondary);
+  background-color: #ab6b60; /* plus foncé pour effet hover */
+  border-color: #ab6b60;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: var(--secondary);
+  background-color: #ab6b60;
+  border-color: #ab6b60;
+  box-shadow: 0 0 0 0.2rem rgba(235, 98, 69, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: var(--secondary);
   background-color: #ab6b60;
   border-color: #ab6b60;
 }
-.btn-primary:focus, .btn-primary.focus {
-color: #f9cbbd;
-  background-color:#ab6b60:
-  border-color: #ab6b60;
-  box-shadow: 0 0 0 0.2rem rgba(38.25, 151.3, 175.1, 0.5);
-}
-.btn-primary.disabled, .btn-primary:disabled {
-  color: #f9cbbd;
-  background-color:#eb6245;
-  border-color:#eb6245;
-}
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-  color: #f9cbbd;
-  background-color:#ab6b60;
-  border-color: rgb(0, 80.3369565217, 97.25);
-}
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38.25, 151.3, 175.1, 0.5);
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(235, 98, 69, 0.5);
 }
 
-
-/*bouton lien*/
+/* === Boutons de type lien === */
 .btn-link {
   font-weight: 400;
-  color:#2e624b;
+  color: var(--text-body);
   text-decoration: none;
 }
+
 .btn-link:hover {
-  color: rgb(0, 69.8043478261, 84.5);
+  color: #00443a; /* plus foncé pour hover */
   text-decoration: underline;
 }
 
-/*selection*/
+/* === Sélection de texte === */
 ::selection {
   color: #fff;
   background: #ab6b60;
@@ -104,3 +132,4 @@ color: #f9cbbd;
   background: #ab6b60;
   text-shadow: none;
 }
+
