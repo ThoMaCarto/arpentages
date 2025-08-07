@@ -1,5 +1,14 @@
 /* === Variables personnalisées === */
 :root {
+  --primary: #0085a1;
+  --secondary:#d0ddd4;
+  --accent: #dadf64;
+  --text-body: #2e624b;
+  --color-bg: #ffffff;
+}
+
+/*thème corail*/
+body.corail.mode{
   --primary: #eb6245;
   --secondary: #f9cbbd;
   --accent: #dadf64;
@@ -69,7 +78,7 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   opacity: 1;
 }
 
@@ -78,7 +87,7 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
-  color: var(  --accent);
+  color: var(  --primary);
 }
 
 /* === Navigation (navbar) === */
