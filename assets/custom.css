@@ -98,7 +98,7 @@ header.masthead .site-heading {
 
 #mainNav .navbar-nav > li.nav-item > a:focus,
 #mainNav .navbar-nav > li.nav-item > a:hover {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 /* === Liste de posts === */
